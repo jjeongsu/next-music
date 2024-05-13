@@ -34,3 +34,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# practice
+/albums
+/movies
+movie-info.tsx
+movie-video.tsx
+navigation.tsx
+nomad.ts
