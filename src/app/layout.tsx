@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Navigation from '@/components/navigation'
 import Providers from './Provider'
 import './global.css'
+import Header from '@/components/Header'
 export const metadata: Metadata = {
   title: {
     template: '%s | 🎧 NextMusic',
@@ -19,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Providers>
-          Thisis Root layout
+          <Header />
           <Navigation />
           {children}
         </Providers>
