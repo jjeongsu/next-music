@@ -19,7 +19,6 @@ export default async function HomePage() {
           <Link href={`/movies/${movie.id}`}>{movie.title}</Link>
         </li>
       ))}
-      <ToggleButton />
     </h1>
   )
 }

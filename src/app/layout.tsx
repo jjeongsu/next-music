@@ -20,9 +20,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Providers>
-          <Header />
-          <Navigation />
-          {children}
+          <div className="max-w-[1500px] flex justify-center flex-col m-auto">
+            <Header />
+            <Navigation />
+            {children}
+          </div>
         </Providers>
       </body>
     </html>

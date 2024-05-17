@@ -11,10 +11,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1ED760',
+        primary: '#6EB0EC',
         gray: '#C4C4C4',
-        shade: '#062912',
+        shade: '#092534',
       },
+    },
+    screens: {
+      sm: { min: '390px', max: '819px' },
+      md: { min: '820px', max: '1023px' },
+      lg: { min: '1024px', max: '2400px' },
+    },
+    transitionProperty: {
+      position: 'position',
     },
   },
   plugins: [],

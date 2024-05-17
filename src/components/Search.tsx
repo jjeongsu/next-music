@@ -11,7 +11,7 @@ export default function Search() {
   return (
     <div
       className="w-full h-[75px] flex justify-center items-center gap-3
-    dark:bg-shade rounded-full bg-slate-50 px-8 dark:border-primary  focus:outline-primary hover:bg-slate-100 focus:bg-slate-100 min-w-[550px]
+    dark:bg-shade rounded-full bg-slate-50 px-8 dark:border-primary  focus:outline-primary hover:bg-slate-100 focus:bg-slate-100 
     "
     >
       <div className="w-[30px] h-[30px] rounded-full border-solid border-4 border-primary "></div>
