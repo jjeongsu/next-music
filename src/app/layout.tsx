@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import Navigation from '@/components/navigation'
-import Providers from './Provider'
+import Providers from '../components/Providers/theme_provider'
 import './global.css'
 import Header from '@/components/Header'
+import AuthSession from '@/components/Providers/session_provider'
 export const metadata: Metadata = {
   title: {
     template: '%s | 🎧 NextMusic',
@@ -19,13 +20,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Providers>
-          <div className="max-w-[1500px] flex justify-center flex-col m-auto">
-            <Header />
-            <Navigation />
-            {children}
-          </div>
-        </Providers>
+        <AuthSession>
+          <Providers>
+            <div className="max-w-[1500px] flex justify-center flex-col m-auto">
+              <Header />
+              <Navigation />
+              {children}
+            </div>
+          </Providers>
+        </AuthSession>
       </body>
     </html>
   )

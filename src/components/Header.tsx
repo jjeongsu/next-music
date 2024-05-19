@@ -4,6 +4,7 @@ import Search from './Search'
 import ToggleButton from './toggle'
 import { IconNofify } from '../../public/icon-notify'
 import { Notifier } from './Notifier'
+import LoginButton from './login-button'
 
 export default function Header() {
   return (
@@ -22,7 +23,7 @@ export default function Header() {
       <div className="flex flex-row h-full w-[23%] items-center">
         <ToggleButton />
         <Notifier />
-        <div>Pro</div>
+        <LoginButton />
       </div>
     </div>
   )
